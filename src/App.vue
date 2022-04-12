@@ -8,9 +8,9 @@
       <HeroNavComp/>
     </main>
     <footer>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="footer">
+        <FooterComp/>
+      </div>
     </footer>
   </div>
 </template>
@@ -20,6 +20,7 @@
 import NavComp from './components/NavComp.vue';
 import ContentComp from './components/ContentComp.vue';
 import HeroNavComp from './components/HeroNavComp.vue';
+import FooterComp from './components/FooterComp.vue';
 
 export default {
   name: 'App',
@@ -28,6 +29,7 @@ export default {
     NavComp,
     ContentComp,
     HeroNavComp,
+    FooterComp,
   }
 }
 </script>
@@ -41,5 +43,9 @@ export default {
   // text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.footer {
+  background-image: url(./assets/img/footer-bg.jpg);
 }
 </style>
