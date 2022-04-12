@@ -1,7 +1,7 @@
 <template>
     <ul>
         <li v-for="(element,index) in homeNav" :key="index">
-            <a href="`${element.url}`"> {{element.name}} </a>
+            <a :class="(element.active == true) ? 'active' : '' " href="`${element.url}`"> {{element.name}} </a>
         </li>
     </ul>
 </template>
@@ -13,43 +13,53 @@ export default {
             homeNav : [
                 {
                     name: 'characters',
-                    url: '/characters'
+                    url: '/characters',
+                    active: false,
                 },
                 {
                     name: 'comics',
-                    url: '/comics'
+                    url: '/comics',
+                    active: true,
                 },
                 {
                     name: 'movies',
-                    url: '/movies'
+                    url: '/movies',
+                    active: false,
                 },
                 {
                     name: 'tv',
-                    url: '/tv'
+                    url: '/tv',
+                    active: false,
                 },
                 {
                     name: 'games',
-                    url: '/games'
+                    url: '/games',
+                    active: false,
                 },
                 {
                     name: 'collectibles',
-                    url: '/collectibles'
+                    url: '/collectibles',
+                    active: false,
                 },
                 {
                     name: 'videos',
-                    url: '/videos'
+                    url: '/videos',
+                    active: false,
                 },
                 {
                     name: 'fans',
-                    url: '/fans'
+                    url: '/fans',
+                    active: false,
                 },
                 {
                     name: 'news',
-                    url: '/news'
+                    url: '/news',
+                    active: false,
                 },
                 {
                     name: 'shop',
-                    url: '/shop'
+                    url: '/shop',
+                    active: false,
                 },
             ]
         }
@@ -59,6 +69,7 @@ export default {
 <style scoped lang="scss">
 //importo scss
 @import '../assets/style/mixin.scss'; 
+@import '../assets/style/variables.scss';
 
 ul {
     @include orizontalMenu;
@@ -69,9 +80,15 @@ ul {
 
         a {
             text-decoration: none;
-            color: #5e6666;
+            color: $secondary-color;
+            padding: 40px 0;
         }
     }
+}
+
+.active {
+    color: $primary-color;
+    border-bottom: 5px solid $primary-color;
 }
 
 </style>
