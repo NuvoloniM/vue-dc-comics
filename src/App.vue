@@ -8,8 +8,11 @@
       <HeroNavComp/>
     </main>
     <footer>
-      <div class="footer">
+      <div class="footer-menu">
         <FooterComp/>
+      </div>
+      <div class="footer-social">
+        <FooterMediaComp/>
       </div>
     </footer>
   </div>
@@ -21,6 +24,7 @@ import NavComp from './components/NavComp.vue';
 import ContentComp from './components/ContentComp.vue';
 import HeroNavComp from './components/HeroNavComp.vue';
 import FooterComp from './components/FooterComp.vue';
+import FooterMediaComp from './components/FooterMediaComp.vue';
 
 export default {
   name: 'App',
@@ -30,22 +34,29 @@ export default {
     ContentComp,
     HeroNavComp,
     FooterComp,
+    FooterMediaComp
   }
 }
 </script>
 
 <style lang="scss">
 
+@import './assets/style/variables.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
   // text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
-.footer {
+.footer-menu {
   background-image: url(./assets/img/footer-bg.jpg);
+}
+
+.footer-social {
+  background: #373939;
+  padding: 10px 0;
 }
 </style>
