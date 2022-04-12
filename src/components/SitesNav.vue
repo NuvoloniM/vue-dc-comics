@@ -1,8 +1,8 @@
 <template>
 <div>
-    <h2>DC Comics</h2>
+    <h2>Sites</h2>
     <ul>
-        <li v-for="(element,index) in dcComics" :key="index">
+        <li v-for="(element,index) in sites" :key="index">
             <a href="`${element.link}`"> {{element.name}}</a>
         </li>
     </ul>
@@ -11,36 +11,28 @@
 </template>
 <script>
 export default {
-    name: 'DcComicsMenu',
+    name: 'SitesNav',
     data() {
         return {
-           dcComics: [
+           sites: [
                 {
-                    name: 'Characters',
+                    name: 'DC',
                     link: '#',
                 },
                 {
-                    name: 'Comics',
+                    name: 'MAD Magazine',
                     link: '#',
                 },
                 {
-                    name: 'Movies',
+                    name: 'DC Kids',
                     link: '#',
                 },
                 {
-                    name: 'TV',
+                    name: 'DC Universe',
                     link: '#',
                 },
                 {
-                    name: 'Games',
-                    link: '#',
-                },
-                {
-                    name: 'Videos',
-                    link: '#',
-                },
-                {
-                    name: 'News',
+                    name: 'DC Power Visa',
                     link: '#',
                 },
             ] 

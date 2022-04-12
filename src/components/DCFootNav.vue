@@ -1,8 +1,8 @@
 <template>
 <div>
-    <h2>DC Comics</h2>
+    <h2>DC</h2>
     <ul>
-        <li v-for="(element,index) in dcComics" :key="index">
+        <li v-for="(element,index) in dc" :key="index">
             <a href="`${element.link}`"> {{element.name}}</a>
         </li>
     </ul>
@@ -11,36 +11,52 @@
 </template>
 <script>
 export default {
-    name: 'DcComicsMenu',
+    name: 'DCFootNav',
     data() {
         return {
-           dcComics: [
+           dc: [
                 {
-                    name: 'Characters',
+                    name: 'Term of Use',
                     link: '#',
                 },
                 {
-                    name: 'Comics',
+                    name: 'Privacy policy(New)',
                     link: '#',
                 },
                 {
-                    name: 'Movies',
+                    name: 'Ad Choices',
                     link: '#',
                 },
                 {
-                    name: 'TV',
+                    name: 'Advertising',
                     link: '#',
                 },
                 {
-                    name: 'Games',
+                    name: 'Jobs',
                     link: '#',
                 },
                 {
-                    name: 'Videos',
+                    name: 'Subscription',
                     link: '#',
                 },
                 {
-                    name: 'News',
+                    name: 'Talent Workshops',
+                    link: '#',
+                },
+                {
+                    name: 'CPSC Certificates',
+                    link: '#',
+                },
+                {
+                    name: 'Ratings',
+                    link: '#',
+                },
+                {
+                    name: 'Shop Help',
+                    link: '#',
+                },
+                {
+                    name: 'Contact Us',
                     link: '#',
                 },
             ] 
