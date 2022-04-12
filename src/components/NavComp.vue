@@ -17,10 +17,11 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+@import '../assets/style/mixin.scss';
+
     nav {
         display: flex;
         justify-content: space-between;
-        width: 80%;
-        margin: 0 auto;
+        @include container;
     }
 </style>
