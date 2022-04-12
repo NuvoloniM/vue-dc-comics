@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    
+    <header>
+      <NavComp/>
+    </header>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
+import NavComp from './components/NavComp.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld
+    NavComp,
   }
 }
 </script>
