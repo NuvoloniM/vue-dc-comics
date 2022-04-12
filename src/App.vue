@@ -5,7 +5,13 @@
     </header>
     <main>
       <ContentComp/>
+      <HeroNavComp/>
     </main>
+    <footer>
+      <div></div>
+      <div></div>
+      <div></div>
+    </footer>
   </div>
 </template>
 
@@ -13,6 +19,7 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import NavComp from './components/NavComp.vue';
 import ContentComp from './components/ContentComp.vue';
+import HeroNavComp from './components/HeroNavComp.vue';
 
 export default {
   name: 'App',
@@ -20,6 +27,7 @@ export default {
     // HelloWorld
     NavComp,
     ContentComp,
+    HeroNavComp,
   }
 }
 </script>
