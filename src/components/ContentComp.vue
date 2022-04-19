@@ -1,14 +1,20 @@
 <template>
     <div>
         <div class="jumbotron"></div>
-        <ul class="card-container">
-            <ComicsComp 
-            v-for="(element,index) in comics"
-            :key="index"
-            :img="element.thumb"
-            :title="element.series"
-            />
-        </ul>
+        <div class="btn">
+            current series
+        </div>
+        <div class="comic-list">
+            <ul class="card-container">
+                <ComicsComp 
+                v-for="(element,index) in comics"
+                :key="index"
+                :img="element.thumb"
+                :title="element.series"
+                />
+            </ul>
+        </div>
+        
     </div>
 </template>
 <script>
@@ -172,12 +178,22 @@ export default {
             background-repeat: no-repeat ;
         }
 
-        .card-container {
+        .btn {
+            @include btn-primary;
+            margin-top: -25px;
+            margin-left: 10%;
+            width: 20%;
+            min-width: 200px;
+        }
+
+        .comic-list{
             @include container;
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 30px 0;
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 30px 0;
+            }
         }
     }
 
