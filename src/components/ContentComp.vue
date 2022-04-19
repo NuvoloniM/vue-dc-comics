@@ -13,8 +13,10 @@
                 :title="element.series"
                 />
             </ul>
+            <button>
+                Load More
+            </button>
         </div>
-        
     </div>
 </template>
 <script>
@@ -188,11 +190,20 @@ export default {
 
         .comic-list{
             @include container;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .card-container {
                 display: flex;
                 flex-wrap: wrap;
                 list-style: none;
                 padding: 30px 0;
+            }
+
+            button {
+                @include btn-primary;
+                margin-bottom: 20px;
+                width: 20%;
             }
         }
     }
