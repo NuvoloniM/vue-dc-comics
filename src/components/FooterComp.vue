@@ -27,6 +27,7 @@ export default {
         align-items: center;
         justify-content: space-between;
         height: 400px;
-    @include container;
+        @include container;
+        padding: 20px 0;
     }
 </style>

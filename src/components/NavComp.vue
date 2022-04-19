@@ -23,5 +23,6 @@ export default {
         display: flex;
         justify-content: space-between;
         @include container;
+        padding: 10px 0;
     }
 </style>
