@@ -184,8 +184,8 @@ export default {
             @include btn-primary;
             margin-top: -25px;
             margin-left: 10%;
-            width: 20%;
-            min-width: 200px;
+            // width: 20%;
+            // min-width: 200px;
         }
 
         .comic-list{
@@ -203,7 +203,7 @@ export default {
             button {
                 @include btn-primary;
                 margin-bottom: 20px;
-                width: 20%;
+                // width: 20%;
             }
         }
     }
